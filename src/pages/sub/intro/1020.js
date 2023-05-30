@@ -27,15 +27,15 @@ export default function Come() {
                 <InfoBox>
                     <div>
                         <h6>ADDRESS</h6>
-                        <p><img src={위치}/> 대구광역시 북구 연암로 68-12(2층)</p>
+                        <p><img src={위치} className="mo"/> 대구광역시 북구 연암로 68-12(2층)</p>
                     </div>
                     <div>
                         <h6>TEL</h6>
-                        <p><img src={전화}/>053-951-3376</p>
+                        <p><img src={전화} className="mo"/>053-951-3376</p>
                     </div>
                     <div>
                         <h6>FAX</h6>
-                        <p><img src={팩스}/>053-952-3376</p>
+                        <p><img src={팩스} className="mo"/>053-952-3376</p>
                     </div>
                 </InfoBox>
             </Map>
@@ -110,18 +110,21 @@ const InfoBox = styled.div`
     @media screen and (max-width:700px) {
         padding: 30px 0;
         h6{
-            font-size: 18px;
-        }
-        p{
-            font-size: 14px;
-        }
-    }
-    @media screen and (max-width:500px) {
-        h6{
             font-size: 16px;
         }
         p{
             font-size: 12px;
+        }
+    }
+    @media screen and (max-width:500px) {
+        h6{
+            font-size: 14px;
+        }
+        p{
+            font-size: 10px;
+        }
+        .mo{
+            display: none;
         }
     }
     @media screen and (max-width:400px) {
@@ -138,7 +141,7 @@ const InfoBox = styled.div`
             gap: 10px;
         }
         h6{
-            font-size: 14px;
+            font-size: 12px;
             padding-bottom: 0px;
         }
         p{
