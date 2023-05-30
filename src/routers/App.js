@@ -62,9 +62,9 @@ function App() {
             {header && <Header user={user} header={header}></Header>}
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/pages/1010" element={<Intro />}/>
-                <Route path="/pages/1020" element={<Come />}/>
-                <Route path="/pages/2010" element={2010} />
+                <Route path="/pages/1010" element={<Intro />} />
+                <Route path="/pages/1020" element={<Come />} />
+                <Route path="/pages/2010" element={<Product_01 />} />
                 <Route path="/pages/2020" element={2020} />
                 <Route path="/pages/2030" element={2030} />
                 <Route path="/pages/2040" element={2040} />
