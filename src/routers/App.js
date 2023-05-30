@@ -55,7 +55,7 @@ function App() {
         window.scrollTo(0, 0);
         accessCheck();
         pageCheck();
-        // tokenCheck(setUser);
+        tokenCheck(setUser);
     }, [nav])
     return (
         <>
