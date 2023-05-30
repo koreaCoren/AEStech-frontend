@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { getCategory } from 'api/category';
+import logo from 'assets/images/ft_logo.png'
 
 const Footer = () => {
     const [categorys, setCategorys] = useState(null);
@@ -15,7 +16,7 @@ const Footer = () => {
             <div className="wrap">
                 <ul>
                     <li className='left'>
-                        <h2>로고자리</h2>
+                        <h2><img src={logo} alt="" /></h2>
                         <p>
                             상호 : AES TEOINOLOGY | 대표자 : 남호영 <br />
                             주소 : 대구광역시 북구 연임로 68-1(2층) <br />

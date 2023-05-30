@@ -8,9 +8,10 @@ import Loading from 'components/loding/Loading';
 
 import styled from 'styled-components';
 
-import logo from "assets/images/logo.png"
+import logo from "assets/images/hd_logo.png"
+import logo2 from "assets/images/hd_logo2.png"
 
-const Header = ({ user }) => {
+const Header = ({ user, header }) => {
     const nav = useNavigate();
     const [categorys, setCategorys] = useState(null);
     const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -30,8 +31,7 @@ const Header = ({ user }) => {
 
         categorys === null
             ? <Loading />
-            : < header style={{ boxShadow: "0px 0px 5px #00000033" }
-            }>
+            : < header style={{ boxShadow: "0px 0px 5px #00000033" }}>
                 {/* <Login>
                     <div className="wrap">
                         {
@@ -58,10 +58,10 @@ const Header = ({ user }) => {
                     </div>
                 </Login> */}
 
-                <Head>
+                <Head type={header} style={header === "pages" ? { backgroundColor: "#fff" } : null}>
                     <div className="wrap">
                         <div className="flexBox">
-                            <a href="/"><h1>로고자리</h1></a>
+                            <a href="/"><h1><img src={header === "pages" ? logo2 : logo} alt="" /></h1></a>
                             <nav className='pc'>
                                 <ul>
                                     {
@@ -180,9 +180,10 @@ const Head = styled.div`
     position: fixed;
     width: 100%;
     padding: 20px 0px;
-    color: #fff;
+    color: ${props => props.type === "pages" ? "#000" : "#fff"};
+    z-index: 10;
     a > h1 {
-        color: #fff;
+        color: ${props => props.type === "pages" ? "#000" : "#fff"};
     }
 
     nav ul li{
@@ -194,7 +195,7 @@ const Head = styled.div`
         font-size: 18px;
         padding: 0px 15px;
         line-height: 50px;
-        color: #fff;
+        color: ${props => props.type === "pages" ? "#000" : "#fff"};
         cursor: pointer;
     }
 
@@ -236,6 +237,7 @@ const Head = styled.div`
         font-size: 24px;
         cursor: pointer;
         line-height: 50px;
+        color: ${props => props.type === "pages" ? "#000" : "#fff"};
     }
 
     .mobile .menuBox{
@@ -311,6 +313,7 @@ const Head = styled.div`
         line-height: 40px;
         white-space: nowrap;
         cursor: pointer;
+        color: #000;
     }
 
     .mobile .menuBox ul.menu > li > ol{
