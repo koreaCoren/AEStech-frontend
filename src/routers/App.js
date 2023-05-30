@@ -17,6 +17,8 @@ import Login from "pages/login/Login";
 import Register from "pages/login/Register";
 import Admin from "routers/Admin";
 import Community from "./community/Community";
+import Intro from "pages/sub/intro/1010"
+import Come from "pages/sub/intro/1020"
 
 import "assets/css/common/common.css";
 
@@ -33,7 +35,7 @@ function App() {
         const expires = moment().add('10', 'm').toDate();
         if (cookies.userCount !== 'true') {
             setCookies('userCount', true, { expires });
-            updateUserAccessCount("나 등장~!")
+            updateUserAccessCount("나 등장~!");
         }
     }
 
@@ -60,8 +62,8 @@ function App() {
             {header && <Header user={user} header={header}></Header>}
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/pages/1010" element={1010} />
-                <Route path="/pages/1020" element={1020} />
+                <Route path="/pages/1010" element={<Intro />} />
+                <Route path="/pages/1020" element={<Come />} />
                 <Route path="/pages/2010" element={<Product_01 />} />
                 <Route path="/pages/2020" element={2020} />
                 <Route path="/pages/2030" element={2030} />
