@@ -54,7 +54,7 @@ margin: 0 auto;
 const Title = styled.h2`
 font-size: 52px;
 font-weight: bold;
-padding: 60px 0 30px 0;
+padding: 120px 0 30px 0;
 @media screen and (max-width:1200px) {
     text-align: center;
 }
@@ -78,11 +78,11 @@ const TextBox = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     p{
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.2;
     }
     p .strong{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         line-height: 1.2;
     }
