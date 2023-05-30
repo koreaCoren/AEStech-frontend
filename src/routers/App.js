@@ -10,6 +10,7 @@ import Header from "components/common/Header";
 import Footer from "components/common/Footer";
 import Error from "components/error/Error";
 import NotFoundPage from "components/error/NotFoundPage";
+import Product_01 from "pages/sub/product/Product_01";
 
 import Main from "pages/main/Main";
 import Login from "pages/login/Login";
@@ -37,9 +38,12 @@ function App() {
     }
 
     // 어드민페이지, 에러페이지 들어오면 헤더 삭제
+    // 메인아니면 헤더 색깔 변경
     const pageCheck = () => {
         if (/.*admin.*/.test(location.pathname) || /.*error.*/.test(location.pathname)) {
             setHeader(false);
+        } else if (/.*pages.*/.test(location.pathname)) {
+            setHeader("pages");
         } else {
             setHeader(true);
         }
@@ -53,12 +57,12 @@ function App() {
     }, [nav])
     return (
         <>
-            {header && <Header user={user}></Header>}
+            {header && <Header user={user} header={header}></Header>}
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/pages/1010" element={1010} />
                 <Route path="/pages/1020" element={1020} />
-                <Route path="/pages/2010" element={2010} />
+                <Route path="/pages/2010" element={<Product_01 />} />
                 <Route path="/pages/2020" element={2020} />
                 <Route path="/pages/2030" element={2030} />
                 <Route path="/pages/2040" element={2040} />
