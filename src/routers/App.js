@@ -10,16 +10,11 @@ import Header from "components/common/Header";
 import Footer from "components/common/Footer";
 import Error from "components/error/Error";
 import NotFoundPage from "components/error/NotFoundPage";
-import Close from "components/inicis/Close";
-import TossSuccess from "components/toss/TossSuccess";
 
 import Main from "pages/main/Main";
 import Login from "pages/login/Login";
 import Register from "pages/login/Register";
 import Admin from "routers/Admin";
-import MyPage from "routers/MyPage";
-import Product from "./Product";
-import Order from "./Order";
 import Community from "./community/Community";
 
 import "assets/css/common/common.css";
@@ -63,42 +58,24 @@ function App() {
                 <Route path="/" element={<Main />} />
                 <Route path="/pages/1010" element={1010} />
                 <Route path="/pages/1020" element={1020} />
-                <Route path="/pages/20" element={20} />
+                <Route path="/pages/2010" element={2010} />
+                <Route path="/pages/2020" element={2020} />
+                <Route path="/pages/2030" element={2030} />
+                <Route path="/pages/2040" element={2040} />
                 <Route path="/pages/30" element={30} />
                 <Route path="/pages/40" element={40} />
                 <Route path="/pages/50" element={50} />
                 <Route path="/pages/60" element={60} />
                 <Route path="/pages/70" element={70} />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <Route path="/admin/*" element={<Admin />} />
-                <Route path="/myPage/*" element={<MyPage />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/loginRegister' element={<Register />} />
-                <Route path="/product/*" element={<Product setOrderData={setOrderData} />} />
-                <Route path="/order/*" element={<Order orderData={orderData} />} />
-                <Route path="/close" element={<Close />} />
                 <Route path="/community/*" element={<Community />} />
 
                 {/* 에러 날때 밑에 파일로 보내줌 */}
                 <Route path="/error" element={<Error />} />
                 <Route path="*" element={<NotFoundPage />} />
-
-                {/* 토스 데이터 전달용 */}
-                <Route path="/tossSuccess" element={<TossSuccess />} />
             </Routes>
             {header && <Footer></Footer>}
         </>
