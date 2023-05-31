@@ -58,4 +58,14 @@ const deleteBoard = async (data) => {
     }
 }
 
-export { getBoard, getDetailBoard, addBoard, deleteBoard };
+const sendInquiry = async (data) => {
+    try{
+        const res = await axios.post("/board/???", data);
+        handleConnectionError(res.data);
+        alert("문의메일이 전송되었습니다.");
+        window.location.replace(`/pages/60`);
+    } catch(error){
+        handleApiError(error);
+    }
+}
+export { getBoard, getDetailBoard, addBoard, deleteBoard, sendInquiry };
