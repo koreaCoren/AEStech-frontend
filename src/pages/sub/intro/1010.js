@@ -58,6 +58,9 @@ padding: 120px 0 30px 0;
 @media screen and (max-width:1200px) {
     text-align: center;
 }
+@media screen and (max-width:500px) {
+    font-size: 36px;
+}
 `
 const ImgBox = styled.div`
     text-align: center;
@@ -67,8 +70,13 @@ const ImgBox = styled.div`
         position: relative;
         left: 50%;
     }
-    @media screen and (max-width:1200px) {
-
+    @media screen and (max-width:1000px) {
+        img{
+        width: 90%;
+        transform: translate(0%,0%);
+        position: relative;
+        left: 0;
+    }
         
     }
 `
@@ -94,7 +102,14 @@ const TextBox = styled.div`
         p .mo{
             display: none;
         }
-        
+    }
+    @media screen and (max-width:500px){
+        p{
+            font-size: 14px;
+        }
+        p .strong{
+            font-size: 16px;
+        }
     }
 
 `
