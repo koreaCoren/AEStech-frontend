@@ -178,16 +178,21 @@ const Form = styled.form`
         width: 100%;
         border: 0px solid black;
         border-bottom: 1px solid #000;
-        padding : 0 10px;
+        padding : 10px 10px;
         margin-bottom: 30px;
+    }
+    input[type='text']:focus{
+        border: 2px solid rgb(0,102,255);
+        border-radius: 5px;
     }
     .checkNum > span{
         color:red;
+        font-size: 18px;
         padding-right: 10px;
     }
     .checkNum > input[type='text']{
         width: 20%;
-        padding: 0px;
+        padding: 5px;
     }
     .btn{
         padding: 140px 0 60px 0;
