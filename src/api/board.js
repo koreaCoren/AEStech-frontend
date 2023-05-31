@@ -61,8 +61,9 @@ const deleteBoard = async (data) => {
 //문의
 const sendInquiry = async (data) => {
     try{
-        const res = await axios.post("/board/???", data);
+        const res = await axios.post("/board/send_mailer", data);
         handleConnectionError(res.data);
+        // console.log(res);
         alert("문의메일이 전송되었습니다.");
         window.location.replace(`/pages/60`);
     } catch(error){
