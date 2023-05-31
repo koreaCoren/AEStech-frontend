@@ -58,6 +58,7 @@ const deleteBoard = async (data) => {
     }
 }
 
+//문의
 const sendInquiry = async (data) => {
     try{
         const res = await axios.post("/board/???", data);

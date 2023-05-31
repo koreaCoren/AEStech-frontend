@@ -150,8 +150,8 @@ font-size: 52px;
 font-weight: bold;
 padding: 120px 0 40px 0;
 text-align: center;
-@media screen and (max-width:1200px) {
-    
+@media screen and (max-width:500px) {
+    font-size: 36px;
 }
 `
 const Form = styled.form`
@@ -200,5 +200,16 @@ const Form = styled.form`
         background: rgb(0,102,255);
         border-radius: 30px;
         color:white;
+    }
+    @media screen and (max-width:500px) {
+        p{
+        font-size: 16px;
+        }
+        p>span{
+            font-size: 16px;
+        }
+        .btn{
+        padding: 30px 0 20px 0;
+    }
     }
 `;
