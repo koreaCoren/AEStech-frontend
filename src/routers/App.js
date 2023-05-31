@@ -10,15 +10,17 @@ import Header from "components/common/Header";
 import Footer from "components/common/Footer";
 import Error from "components/error/Error";
 import NotFoundPage from "components/error/NotFoundPage";
+import Intro from "pages/sub/intro/1010"
+import Come from "pages/sub/intro/1020"
 import Product_01 from "pages/sub/product/Product_01";
+import Inquiry from "pages/sub/inquiry/Inquiry";
 
 import Main from "pages/main/Main";
 import Login from "pages/login/Login";
 import Register from "pages/login/Register";
 import Admin from "routers/Admin";
 import Community from "./community/Community";
-import Intro from "pages/sub/intro/1010"
-import Come from "pages/sub/intro/1020"
+
 
 import "assets/css/common/common.css";
 import Performance from "pages/sub/performance/Performance";

@@ -26,7 +26,7 @@ export default function Intro() {
                     전국 어디서든 상담 시공해드리며, 향후 A/S 및 고객관리에 최선을 다하겠습니다.
                 </p>
                 <p>
-                    지금까지 저희 AES TECHNOLOGY를 아껴주시고 찾아주신 고객 여러분께<br className='mo'/>
+                    지금까지 저희 AES TECHNOLOGY를 아껴주시고 찾아주신 고객 여러분께 <br className='mo'/>
                     감사드리며 앞으로도 더욱 많은 지도 편달 부탁드립니다.<br/>
                     <br/>
                     최고의 품질의 제품으로 고객만족에 최선을 다할 것을 약속드립니다.
@@ -54,9 +54,12 @@ margin: 0 auto;
 const Title = styled.h2`
 font-size: 52px;
 font-weight: bold;
-padding: 60px 0 30px 0;
+padding: 120px 0 30px 0;
 @media screen and (max-width:1200px) {
     text-align: center;
+}
+@media screen and (max-width:500px) {
+    font-size: 36px;
 }
 `
 const ImgBox = styled.div`
@@ -67,8 +70,13 @@ const ImgBox = styled.div`
         position: relative;
         left: 50%;
     }
-    @media screen and (max-width:1200px) {
-
+    @media screen and (max-width:1000px) {
+        img{
+        width: 90%;
+        transform: translate(0%,0%);
+        position: relative;
+        left: 0;
+    }
         
     }
 `
@@ -78,11 +86,11 @@ const TextBox = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     p{
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.2;
     }
     p .strong{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         line-height: 1.2;
     }
@@ -94,7 +102,15 @@ const TextBox = styled.div`
         p .mo{
             display: none;
         }
-        
+    }
+    @media screen and (max-width:500px){
+        p{
+            font-size: 14px;
+        }
+        p .strong{
+            font-size: 16px;
+        }
+
     }
 
 `
