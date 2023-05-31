@@ -20,7 +20,7 @@ export default function Inquiry() {
     },[])
 
     const createRandomNum = () => {
-        let rdNum = Math.floor((Math.random()*9000)+1000);
+        let rdNum = Math.floor((Math.random()*8999)+1000);
         return rdNum;
     }
 
@@ -54,7 +54,6 @@ export default function Inquiry() {
                 break;
             case "checkNum":
                 setCheckNum(value);
-                console.log(value);
                 break;
         }
 
@@ -177,7 +176,7 @@ const Form = styled.form`
     input[type='text']{
         width: 100%;
         border: 0px solid black;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid rgb(220,220,220);
         padding : 10px 10px;
         margin-bottom: 30px;
     }
@@ -214,7 +213,7 @@ const Form = styled.form`
             font-size: 16px;
         }
         .btn{
-        padding: 30px 0 20px 0;
+        padding: 30px 0 60px 0;
     }
     }
 `;
