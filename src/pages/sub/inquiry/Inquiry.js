@@ -20,7 +20,7 @@ export default function Inquiry() {
     },[])
 
     const createRandomNum = () => {
-        let rdNum = Math.floor(Math.random()*10000);
+        let rdNum = Math.floor((Math.random()*9000)+1000);
         return rdNum;
     }
 
