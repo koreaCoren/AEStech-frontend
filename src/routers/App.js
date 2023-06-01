@@ -98,7 +98,7 @@ function App() {
                 <Route path="/pages/30/:boardPage" element={<Performance />} />
                 <Route path="/pages/40/:boardPage" element={<Agency />} />
                 <Route path="/pages/50/:boardPage" element={<Distributor />} />
-                <Route path="/pages/60" element={<Inquiry />} />
+                <Route path="/pages/60/1" element={<Inquiry />} />
 
                 <Route path="/pages/performanceDetail/:boardPage" element={<PerformanceDetail />} />
                 <Route path="/pages/agencyDetail/:boardPage" element={<AgencyDetail />} />
