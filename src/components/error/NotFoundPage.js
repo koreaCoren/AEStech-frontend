@@ -22,6 +22,7 @@ const Bg = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 9999999999999;
     a{
         border: 1px solid #007dfe;
         color: #007dfe;

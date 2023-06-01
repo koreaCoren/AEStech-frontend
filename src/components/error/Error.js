@@ -15,6 +15,7 @@ const Image = styled.img`
     transform: translate(-50%,-50%);
     max-width: 370px;
     width: 80%;
+    z-index: 9999999999;
 `
 
 export default Error;

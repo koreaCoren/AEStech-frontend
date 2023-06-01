@@ -57,6 +57,31 @@ export const Nav = styled.div`
         background-color: #023885;
         color: #fff;
     }
+    @media (max-width: 600px) {
+        ul li a{
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 400px) {
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    ul li{
+        &:nth-child(1),
+        &:nth-child(3){
+            border-right: 1px solid #ccc;
+        }
+        &:nth-child(1),
+        &:nth-child(2){
+            border-bottom: 1px solid #ccc;
+        }
+        &:nth-child(2){
+            border-right:none;
+        }
+    }
+    }
 `
 
 export default Tap;
