@@ -13,6 +13,17 @@ import NotFoundPage from "components/error/NotFoundPage";
 import Intro from "pages/sub/intro/1010"
 import Come from "pages/sub/intro/1020"
 import Product_01 from "pages/sub/product/Product_01";
+import Product_01_1 from "pages/sub/product/Product_01_1";
+import Product_01_2 from "pages/sub/product/Product_01_2";
+import Product_01_3 from "pages/sub/product/Product_01_3";
+import Product_01_4 from "pages/sub/product/Product_01_4";
+import Product_01_5 from "pages/sub/product/Product_01_5";
+import Product_01_6 from "pages/sub/product/Product_01_6";
+import Product_02 from "pages/sub/product/Product_02";
+import Product_02_1 from "pages/sub/product/Product_02_1";
+import Product_03 from "pages/sub/product/Product_03";
+import Product_04 from "pages/sub/product/Product_04";
+import Product_04_1 from "pages/sub/product/Product_04_1";
 import Inquiry from "pages/sub/inquiry/Inquiry";
 
 import Main from "pages/main/Main";
@@ -67,14 +78,21 @@ function App() {
                 <Route path="/pages/1010" element={<Intro />} />
                 <Route path="/pages/1020" element={<Come />} />
                 <Route path="/pages/2010" element={<Product_01 />} />
-                <Route path="/pages/2020" element={2020} />
-                <Route path="/pages/2030" element={2030} />
-                <Route path="/pages/2040" element={2040} />
+                <Route path="/pages/2010/1" element={<Product_01_1 />} />
+                <Route path="/pages/2010/2" element={<Product_01_2 />} />
+                <Route path="/pages/2010/3" element={<Product_01_3 />} />
+                <Route path="/pages/2010/4" element={<Product_01_4 />} />
+                <Route path="/pages/2010/5" element={<Product_01_5 />} />
+                <Route path="/pages/2010/6" element={<Product_01_6 />} />
+                <Route path="/pages/2020" element={<Product_02 />} />
+                <Route path="/pages/2020/1" element={<Product_02_1 />} />
+                <Route path="/pages/2030" element={<Product_03 />} />
+                <Route path="/pages/2040" element={<Product_04 />} />
+                <Route path="/pages/2040/1" element={<Product_04_1 />} />
                 <Route path="/pages/30" element={30} />
                 <Route path="/pages/40" element={40} />
                 <Route path="/pages/50" element={50} />
                 <Route path="/pages/60" element={<Inquiry />} />
-                <Route path="/pages/70" element={70} />
 
                 <Route path="/admin/*" element={<Admin />} />
                 <Route path='/login' element={<Login />} />

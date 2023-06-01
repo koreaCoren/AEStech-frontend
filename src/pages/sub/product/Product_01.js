@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 
 import Tap from 'components/product/Tap';
 
@@ -11,7 +11,7 @@ import product04 from "assets/images/prodcut/4.png";
 import product05 from "assets/images/prodcut/5.png";
 import product06 from "assets/images/prodcut/6.png";
 
-const Product_01 = () => {
+const Product = () => {
     return (
         <Style.Container>
             <div className="wrap">
@@ -19,57 +19,69 @@ const Product_01 = () => {
 
                 <ul className='list'>
                     <li>
-                        <Link>
+                        <Link to={"1"}>
                             <div>
                                 <img src={product01} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
                             <h5>■ 냉풍건조기 [CWCD-230D]</h5>
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"2"}>
                             <div>
                                 <img src={product01} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
-                            <h5>■ 냉풍건조기 [CWCD-230D]</h5>
+                            <h5>■ 냉풍건조기 [CWCD-115D]</h5>
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"3"}>
                             <div>
                                 <img src={product03} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
-                            <h5>■ 냉풍건조기 [CWCD-230D]</h5>
+                            <h5>■ 냉풍건조기 [CWCD-010D]</h5>
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"4"}>
                             <div>
                                 <img src={product04} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
-                            <h5>■ 냉풍건조기 [CWCD-230D]</h5>
+                            <h5>■ 냉풍건조기 [CWCD-007C]</h5>
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"5"}>
                             <div>
                                 <img src={product05} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
-                            <h5>■ 냉풍건조기 [CWCD-230D]</h5>
+                            <h5>■ 냉풍건조기 [CWCD-003C]</h5>
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"6"}>
                             <div>
                                 <img src={product06} alt="" />
-                                <div className="more">자세히보기</div>
+                                <div className="more">
+                                    <span>자세히보기</span>
+                                </div>
                             </div>
-                            <h5>■ 냉풍건조기 [CWCD-230D]</h5>
+                            {/* <h5>■ 냉풍건조기 [CWCD-230D]</h5> */}
                         </Link>
                     </li>
                 </ul>
@@ -78,4 +90,4 @@ const Product_01 = () => {
     );
 };
 
-export default Product_01;
+export default Product;
