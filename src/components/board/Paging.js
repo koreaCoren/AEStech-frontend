@@ -41,7 +41,7 @@ const Paging = ({ count, boardPage, boardLength, url }) => {
     return (
         <PagingContainer>
             <ul>
-                {
+                {/* {
                     searchParams.get("search") === null
                         ? <li>
                             <Link to={`${url}/1`}>
@@ -53,7 +53,7 @@ const Paging = ({ count, boardPage, boardLength, url }) => {
                                 <i className="fa-solid fa-angles-left"></i>
                             </Link>
                         </li>
-                }
+                } */}
                 {
                     pageNumbers.map((page) => (
                         searchParams.get("search") === null
@@ -75,7 +75,7 @@ const Paging = ({ count, boardPage, boardLength, url }) => {
                             </li>
                     ))
                 }
-                {
+                {/* {
                     searchParams.get("search") === null
                         ? <li>
                             <Link to={`${url}/${maxPage}`}>
@@ -87,7 +87,7 @@ const Paging = ({ count, boardPage, boardLength, url }) => {
                                 <i className="fa-solid fa-angles-right"></i>
                             </Link>
                         </li>
-                }
+                } */}
             </ul>
         </PagingContainer >
     );
@@ -105,18 +105,22 @@ export const PagingContainer = styled.div`
     }
 
     ul li a {
-        background-color: #aaa;
-        color: #fff;
+        /* background-color: #aaa; */
+        color: #000;        
         border-radius: 5px;
+        font-size: 17px;
+        font-family: 'GmarketSansBold';
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
     }
 
     ul li a.now {
-        background-color: #1a6dff;
+        /* background-color: #1a6dff; */
+        color: #0066ff;
     }
 `;
 

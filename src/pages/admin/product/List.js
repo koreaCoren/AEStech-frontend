@@ -5,7 +5,7 @@ import { getProduct, deleteProduct } from 'api/product.js';
 import { getCategory } from 'api/category';
 
 import Loading from 'components/loding/Loading';
-import Pageing from 'components/board/Pageing';
+import Paging from 'components/board/Paging';
 import Searching from 'components/board/Searching';
 import LinkButton from 'components/admin/product/button/LinkButton';
 
@@ -86,7 +86,7 @@ const List = () => {
                         )
                     })
                 }
-                <Pageing count={COUNT} boardPage={boardPage} boardLength={copyList?.length} url={`/admin/product`} />
+                <Paging count={COUNT} boardPage={boardPage} boardLength={copyList?.length} url={`/admin/product`} />
             </>
     );
 };

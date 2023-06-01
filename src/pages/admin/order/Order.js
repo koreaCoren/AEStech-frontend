@@ -8,7 +8,7 @@ import { comma } from 'utils/commaReplace';
 
 import Top from 'components/admin/Top';
 import Loading from 'components/loding/Loading';
-import Pageing from 'components/board/Pageing';
+import Paging from 'components/board/Paging';
 import Searching from 'components/board/Searching';
 import Download from 'components/admin/download/OrderDown';
 
@@ -85,7 +85,7 @@ const Order = () => {
                         })
                     }
                 </Common.Padding>
-                <Pageing boardPage={boardPage} boardLength={board.count.page_count} url={"/admin/order"} />
+                <Paging boardPage={boardPage} boardLength={board.count.page_count} url={"/admin/order"} />
             </>
     );
 };

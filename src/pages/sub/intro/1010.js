@@ -26,7 +26,7 @@ export default function Intro() {
                     전국 어디서든 상담 시공해드리며, 향후 A/S 및 고객관리에 최선을 다하겠습니다.
                 </p>
                 <p>
-                    지금까지 저희 AES TECHNOLOGY를 아껴주시고 찾아주신 고객 여러분께<br className='mo'/>
+                    지금까지 저희 AES TECHNOLOGY를 아껴주시고 찾아주신 고객 여러분께 <br className='mo'/>
                     감사드리며 앞으로도 더욱 많은 지도 편달 부탁드립니다.<br/>
                     <br/>
                     최고의 품질의 제품으로 고객만족에 최선을 다할 것을 약속드립니다.
@@ -110,6 +110,7 @@ const TextBox = styled.div`
         p .strong{
             font-size: 16px;
         }
+
     }
 
 `
