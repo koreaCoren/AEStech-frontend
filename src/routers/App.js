@@ -23,6 +23,12 @@ import Community from "./community/Community";
 
 
 import "assets/css/common/common.css";
+import Performance from "pages/sub/performance/Performance";
+import PerformanceDetail from "pages/sub/performance/PerformanceDetail";
+import Agency from "pages/sub/Agency/Agency";
+import AgencyDetail from "pages/sub/Agency/AgencyDetail";
+import Distributor from "pages/sub/Distributor/Distributor";
+import DistributorDetail from "pages/sub/Distributor/DistributorDetail";
 
 function App() {
     const nav = useNavigate();
@@ -70,11 +76,14 @@ function App() {
                 <Route path="/pages/2020" element={2020} />
                 <Route path="/pages/2030" element={2030} />
                 <Route path="/pages/2040" element={2040} />
-                <Route path="/pages/30" element={30} />
-                <Route path="/pages/40" element={40} />
-                <Route path="/pages/50" element={50} />
-                <Route path="/pages/60" element={<Inquiry />} />
-                <Route path="/pages/70" element={70} />
+                <Route path="/pages/30/:boardPage" element={<Performance />} />
+                <Route path="/pages/40/:boardPage" element={<Agency />} />
+                <Route path="/pages/50/:boardPage" element={<Distributor />} />
+                <Route path="/pages/60" element={60} />
+
+                <Route path="/pages/performanceDetail/:boardPage" element={<PerformanceDetail />} />
+                <Route path="/pages/agencyDetail/:boardPage" element={<AgencyDetail />} />
+                <Route path="/pages/distributorDetail/:boardPage" element={<DistributorDetail />} />
 
                 <Route path="/admin/*" element={<Admin />} />
                 <Route path='/login' element={<Login />} />

@@ -70,7 +70,7 @@ const Header = ({ user, header }) => {
                                                 <li key={i}>
                                                     {
                                                         a.lowCategory.length <= 0
-                                                            ? <Link to={`/pages/${(a.cate_code)}`}>{a.cate}</Link>
+                                                            ? <Link to={`/pages/${(a.cate_code)}/1`}>{a.cate}</Link>
                                                             : <span
                                                                 onClick={() => {
                                                                     setIsMobileMenu(!isMobileMenu);
@@ -124,7 +124,7 @@ const Header = ({ user, header }) => {
                                                     <li key={i}>
                                                         {
                                                             a.lowCategory.length <= 0
-                                                                ? <Link to={`/pages/${(a.cate_code)}`}>{a.cate}</Link>
+                                                                ? <Link to={`/pages/${(a.cate_code)}/1`}>{a.cate}</Link>
                                                                 : <span
                                                                     onClick={() => {
                                                                         setIsMobileMenu(!isMobileMenu);
@@ -177,6 +177,7 @@ const Login = styled.div`
     }
 `
 const Head = styled.div`
+    top:0;
     position: fixed;
     width: 100%;
     padding: 20px 0px;

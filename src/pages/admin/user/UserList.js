@@ -8,7 +8,7 @@ import { formatPhoneNumber } from 'utils/setPhoneNumber';
 import Searching from 'components/board/Searching';
 import Top from 'components/admin/Top';
 import Loading from 'components/loding/Loading';
-import Pageing from 'components/board/Pageing';
+import Paging from 'components/board/Paging';
 
 import * as Style from 'assets/styleComponent/admin/user/user';
 import * as Common from 'assets/styleComponent/admin/common';
@@ -67,7 +67,7 @@ const UserList = () => {
                         })
                     }
                 </Common.Padding>
-                <Pageing boardPage={boardPage} boardLength={board.count.page_count} url={"/admin/user"} />
+                <Paging boardPage={boardPage} boardLength={board.count.page_count} url={"/admin/user"} />
             </>
     );
 };
