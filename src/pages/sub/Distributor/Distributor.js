@@ -33,16 +33,21 @@ const Distributor = () => {
                     <h2>총판</h2>
 
                     <div className="flexBox">
-                        {adminCheck(false) && <Link className='write' to={"/community/write"}>글쓰기</Link>}
+                        {adminCheck(false) && <Link className='write' to={"/community/distributor/write"}>글쓰기</Link>}
                     </div>
                     <Style.Board>
-                        <ul className='title'>
-                            <li>No.</li>
-                            <li>제목</li>
-                            {/* <li>글쓴이</li> */}
-                            <li>작성일</li>
-                            {/* <li>조회수</li> */}
-                        </ul>
+
+                        {
+                            boardList.list.length > 0
+                                ? <ul className='title'>
+                                    <li>No.</li>
+                                    <li>제목</li>
+                                    {/* <li>글쓴이</li> */}
+                                    <li>작성일</li>
+                                    {/* <li>조회수</li> */}
+                                </ul>
+                                : null
+                        }
                         {
                             boardList.list.length > 0
                                 ? boardList.list.map((a, i) => {
@@ -51,12 +56,15 @@ const Distributor = () => {
                                             <li>{a.i_board}</li>
                                             <li><Link to={`/pages/DistributorDetail/${a.i_board}`}>{a.title}</Link></li>
                                             {/* <li>{a.user_id}</li> */}
-                                            <li>{a.create_date}</li>
+                                            <li>{20 + a.create_date.replaceAll('/', '-')}</li>
                                             {/* <li>{a.view_up}</li> */}
                                         </ul>
                                     )
                                 })
-                                : <p>등록된 게시글이 없습니다</p>
+
+                                : <Style.NonBoard>
+                                    <p>등록된 게시글이 없습니다</p>
+                                </Style.NonBoard>
                         }
                     </Style.Board>
 

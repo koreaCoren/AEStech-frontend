@@ -116,15 +116,28 @@ export const Detail = styled.div`
 
     .title ul li div {
         font-size: 17px;
+        overflow: hidden;  		
+        text-overflow: ellipsis;  	
+        white-space: nowrap; 		
+        word-break:break-all
     }
 
-    .content {
-        display: flex;
+    .content {        
         padding-bottom: 50px;
         border-bottom: 1px solid #ccc;
         min-height: 200px;
-        justify-content: center;
-        align-items: center;
+    }
+    .content .text-huge{        
+        font-size: 30px;
+    }
+    .content .text-big{        
+        font-size: 20px;
+    }
+    .content .text-small{        
+        font-size: 12px;
+    }
+    .content .text-tiny{        
+        font-size: 10px;
     }
 
     .content>img {
@@ -133,17 +146,32 @@ export const Detail = styled.div`
         display: block;
     }
 
-    .content p {
+    /* .content p {
         font-size: 14px;
         line-height: 1.2;
         color: #666666;
-    }
+    } */
     .wrap .button {
         display: flex;
         justify-content: center;
     }
+    .flexBox {
+    position: relative;
+    }
+    .flexBox button{
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: #444;
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        top: -10px;
+        pointer-events: all;
+        cursor: pointer;
+    }
 
-    .more,button {
+    .more {
         margin-top: 67px;
         background-color: #0066ff;
         font-weight: bold;
@@ -200,6 +228,20 @@ export const Detail = styled.div`
         font-size: 16px;
         color: #909090;
     }
+    @media(max-width:1200px) {
+        .title ul li {
+            grid-template-columns: 100px 1fr;
+        }
+        .title .title_pc{
+            display: none;
+        }
+    };
+    @media(max-width:600px) {
+        .title ul li div:nth-child(2) {
+            padding: 0;
+            width: 95%;
+        }
+    };
     @media(max-width:400px) {
         .productTitle {
             flex-direction: column;
@@ -213,7 +255,7 @@ export const Detail = styled.div`
 
         .title ul li {
             grid-template-columns: 100px 1fr;
-        }
+        }        
 
         .comments {
             padding: 50px 0px;

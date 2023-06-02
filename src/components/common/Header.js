@@ -26,7 +26,6 @@ const Header = ({ user, header }) => {
         setIsMobileMenu(false);
         setIsMenuBox(false);
     }, [nav])
-
     return (
 
         categorys === null
@@ -58,10 +57,10 @@ const Header = ({ user, header }) => {
                     </div>
                 </Login> */}
 
-                <Head type={header} style={header === "pages" ? { backgroundColor: "#fff" } : null}>
+                <Head type={header} style={header === "pages" || header === "community" ? { backgroundColor: "#fff" } : null}>
                     <div className="wrap">
                         <div className="flexBox">
-                            <a href="/"><h1><img src={header === "pages" ? logo2 : logo} alt="" /></h1></a>
+                            <a href="/"><h1><img src={header === "pages" || header === "community" ? logo2 : logo} alt="" /></h1></a>
                             <nav className='pc'>
                                 <ul>
                                     {
@@ -181,10 +180,10 @@ const Head = styled.div`
     position: fixed;
     width: 100%;
     padding: 20px 0px;
-    color: ${props => props.type === "pages" ? "#000" : "#fff"};
+    color: ${props => props.type === "pages" || props.type === "community" ? "#000" : "#fff"};
     z-index: 10;
     a > h1 {
-        color: ${props => props.type === "pages" ? "#000" : "#fff"};
+        color: ${props => props.type === "pages" || props.type === "community" ? "#000" : "#fff"};
     }
 
     nav ul li{
@@ -196,7 +195,7 @@ const Head = styled.div`
         font-size: 18px;
         padding: 0px 15px;
         line-height: 50px;
-        color: ${props => props.type === "pages" ? "#000" : "#fff"};
+        color: ${props => props.type === "pages" || props.type === "community" ? "#000" : "#fff"};
         cursor: pointer;
     }
 
@@ -238,7 +237,7 @@ const Head = styled.div`
         font-size: 24px;
         cursor: pointer;
         line-height: 50px;
-        color: ${props => props.type === "pages" ? "#000" : "#fff"};
+        color: ${props => props.type === "pages" || props.type === "community" ? "#000" : "#fff"};
     }
 
     .mobile .menuBox{

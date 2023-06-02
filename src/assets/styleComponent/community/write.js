@@ -4,7 +4,7 @@ export const Write = styled.div`
     width: 100%;
     max-width: 800px;
     padding: 50px 0px;
-    margin: 0 auto;
+    margin: 150px auto;
 
     h2{
         text-align: center;

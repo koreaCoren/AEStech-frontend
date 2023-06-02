@@ -10,13 +10,18 @@ export const Container = styled.div`
         border-bottom: 1px solid #000;
         padding-bottom: 50px;
     }
-
+    .flexBox {
+    position: relative;
+    }
     .write{
         padding: 5px 20px;
         border-radius: 5px;
         background-color: #444;
         color: #fff;
         font-size: 16px;
+        position: absolute;
+        right: 0;
+        top: -45px;
     }
 
     @media (max-width:500px) {
@@ -90,18 +95,30 @@ export const Board = styled.div`
     p{
         text-align: center;
         line-height: 200px;
-        border-bottom: 1px solid #aaa;
     }
 
     @media (max-width:700px) {
         ul{
-            grid-template-columns: 50px 1fr 100px;
+            grid-template-columns: 1fr 3fr 1.5fr;
         }
         .title li:nth-child(4),
         .title li:nth-child(5),
         .list li:nth-child(4),
         .list li:nth-child(5){
             display: none;
+        }
+        ul:not(:first-child) li:nth-child(2){
+            padding: 0 10px;
+        }
+        .list li,.list a{
+            font-size: 14px;
+            overflow: hidden;  		
+            text-overflow: ellipsis;  	
+            white-space: nowrap; 		
+            word-break:break-all
+        }
+        .list li:last-child{
+            font-size: 10px;
         }
     }
 `
