@@ -51,6 +51,22 @@ export const Container = styled.div`
         margin-top: 20px;
         line-height: 1.2;
     }
+    @media (max-width: 900px) {
+        .list{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @media (max-width: 700px) {
+        .list{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 500px) {
+        .list li a h5{
+            font-size: 12px;
+            letter-spacing: -1px;
+        }
+    }
 `
 
 export const Top = styled.div`
@@ -107,6 +123,40 @@ export const Top = styled.div`
         text-align: right;
         color: #444;
         margin-top: 10px;
+    }
+
+    @media (max-width:900px) {
+        flex-direction: column;
+    }
+    @media (max-width:500px) {
+        gap: 20px;
+        h2{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 16px;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 12px;
+        }
+        img{
+            width: 100%;
+        }
+        table tr{
+            display: flex;
+            flex-direction: column;
+        }
+        table tr td{
+            width: 100% !important;
+            text-align: center;
+        }
+        h5{
+            text-align: left;
+            font-size: 10px;
+        }
     }
 `
 
@@ -171,6 +221,40 @@ export const Top2 = styled.div`
         color: #444;
         margin-top: 10px;
     }
+    @media (max-width:1000px) {
+        .flex{
+            flex-direction: column;
+        }
+        h5{
+            text-align: left;
+        }
+    }
+    @media (max-width:700px) {
+        table tr{
+            display: flex;
+            flex-direction: column;
+        }
+        table tr td{
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+    @media (max-width:500px) {
+        h2{
+            font-size: 18px;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        p{
+            font-size: 12px;
+        }
+        table{
+            margin-top: 0px;
+        }
+        h5{
+            font-size: 10px;
+        }
+    }
 `
 
 export const Bottom = styled.div`
@@ -204,5 +288,16 @@ export const Bottom = styled.div`
     }
     .content > div img{
         width: 100%;
+    }
+    @media (max-width:500px) {
+        h2{
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+        .content > div{
+            margin-top: 10px;
+            grid-template-columns: 1fr;
+        }
     }
 `
