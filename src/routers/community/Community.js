@@ -5,8 +5,8 @@ import Notice from 'pages/community/Notice';
 import NoticeDetail from 'pages/community/NoticeDetail';
 import NoticeWrite from 'pages/community/NoticeWrite';
 import PerformanceWrite from 'pages/sub/performance/PerformanceWrite';
-import AgencyWrite from 'pages/sub/Agency/AgencyWrite';
-import DistributorWrite from 'pages/sub/Distributor/DistributorWrite';
+import AgencyWrite from 'pages/sub/agency/AgencyWrite';
+import DistributorWrite from 'pages/sub/distributor/DistributorWrite';
 
 const Community = () => {
     return (
