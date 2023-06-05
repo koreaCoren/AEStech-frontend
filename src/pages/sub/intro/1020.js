@@ -68,7 +68,19 @@ const Map = styled.div`
     left: 50%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
-}`
+}
+@media screen and (max-width:1200px) {
+    #map{
+    width: 90%;
+    height: 580px;
+    transform: translate(-50%,0%);
+    position: relative;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+}
+`
 
 const InfoBox = styled.div`
     background-color: rgb(2,56,133);

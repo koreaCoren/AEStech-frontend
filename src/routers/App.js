@@ -36,10 +36,10 @@ import Community from "./community/Community";
 import "assets/css/common/common.css";
 import Performance from "pages/sub/performance/Performance";
 import PerformanceDetail from "pages/sub/performance/PerformanceDetail";
-import Agency from "pages/sub/agency/Agency";
-import AgencyDetail from "pages/sub/agency/AgencyDetail";
-import Distributor from "pages/sub/distributor/Distributor";
-import DistributorDetail from "pages/sub/distributor/DistributorDetail";
+import Agency from "pages/sub/Agency/Agency";
+import AgencyDetail from "pages/sub/Agency/AgencyDetail";
+import Distributor from "pages/sub/Distributor/Distributor";
+import DistributorDetail from "pages/sub/Distributor/DistributorDetail";
 
 function App() {
     const nav = useNavigate();
