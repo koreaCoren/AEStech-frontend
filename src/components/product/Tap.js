@@ -58,6 +58,9 @@ export const Nav = styled.div`
         color: #fff;
     }
     @media (max-width: 600px) {
+        h2{
+            font-size: 40px;
+        }
         ul li a{
             line-height: 40px;
             font-size: 14px;
