@@ -40,7 +40,7 @@ const Main = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to={`pages/30`}>
+                            <Link to={`pages/30/1`}>
                                 <div>
                                     <img src={happy02} alt="" />
                                     <div className="content">
@@ -52,7 +52,7 @@ const Main = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to={`pages/60`}>
+                            <Link to={`pages/60/1`}>
                                 <div>
                                     <img src={happy03} alt="" />
                                     <div className="content">
