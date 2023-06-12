@@ -36,6 +36,23 @@ export const Banner = styled.div`
             font-size: 14px;
         }
     }
+
+    @media (max-width:600px) {
+        .content{
+            top: 25%;
+        }
+    }
+    @media (max-width:400px) {
+        .content{
+            top: 28%;
+        }
+        .content h2{
+            font-size: 18px;
+        }
+        .content p{
+            font-size: 12px;
+        }
+    }
 `
 
 export const Happy = styled.div`

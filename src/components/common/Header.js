@@ -104,7 +104,7 @@ const Header = ({ user, header }) => {
                                         ? "menuBox on"
                                         : "menuBox"
                                 }>
-                                    {
+                                    {/* {
                                         user?.result === "ok"
                                             ? <ul className='user flexBox'>
                                                 <li>{sessionStorage.getItem("userId")}님 로그인중</li>
@@ -114,7 +114,7 @@ const Header = ({ user, header }) => {
                                                 <li><Link to={"login"}>로그인</Link></li>
                                                 <li><Link to={"loginRegister"}>회원가입</Link></li>
                                             </ul>
-                                    }
+                                    } */}
 
                                     <ul className='menu'>
                                         {

@@ -7,11 +7,11 @@ export const Container = styled.div`
         font-size: 40px;
         font-weight: bold;
         font-family: 'GmarketSansBold';
-        border-bottom: 1px solid #000;
-        padding-bottom: 50px;
     }
     .flexBox {
-    position: relative;
+        position: relative;
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
     }
     .write{
         padding: 5px 20px;
@@ -19,9 +19,6 @@ export const Container = styled.div`
         background-color: #444;
         color: #fff;
         font-size: 16px;
-        position: absolute;
-        right: 0;
-        top: -45px;
     }
 
     @media (max-width:500px) {
@@ -32,7 +29,6 @@ export const Container = styled.div`
     
 `
 export const Board = styled.div`
-
     ul{
         display: grid;
         grid-template-columns: 18% 62% 1fr;

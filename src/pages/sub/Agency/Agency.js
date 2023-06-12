@@ -30,9 +30,9 @@ const Agency = () => {
             ? <Loading />
             : <Style.Container>
                 <div className="wrap">
-                    <h2>대리점</h2>
-
                     <div className="flexBox">
+                        <h2>대리점</h2>
+
                         {adminCheck(false) && <Link className='write' to={"/community/agency/write"}>글쓰기</Link>}
                     </div>
                     <Style.Board>

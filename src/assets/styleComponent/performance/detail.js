@@ -5,7 +5,6 @@ export const Detail = styled.div`
 
     h2 {
         font-size: 52px;
-        margin-bottom: 20px;
         font-family: 'GmarketSansBold';
     }
 
@@ -164,10 +163,6 @@ export const Detail = styled.div`
         background-color: #444;
         color: #fff;
         font-size: 16px;
-        position: absolute;
-        right: 0;
-        top: -10px;
-        pointer-events: all;
         cursor: pointer;
     }
 
@@ -237,6 +232,9 @@ export const Detail = styled.div`
         }
     };
     @media(max-width:600px) {
+        h2{
+            font-size:34px;
+        }
         .title ul li div:nth-child(2) {
             padding: 0;
             width: 95%;

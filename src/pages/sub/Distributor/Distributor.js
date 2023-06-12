@@ -30,9 +30,9 @@ const Distributor = () => {
             ? <Loading />
             : <Style.Container>
                 <div className="wrap">
-                    <h2>총판</h2>
-
                     <div className="flexBox">
+                        <h2>총판</h2>
+
                         {adminCheck(false) && <Link className='write' to={"/community/distributor/write"}>글쓰기</Link>}
                     </div>
                     <Style.Board>
