@@ -34,8 +34,8 @@ const DistributorDetail = () => {
             ? <Loading />
             : <Style.Detail>
                 <div className="wrap">
-                    <h2>총판</h2>
                     <div className="flexBox">
+                        <h2>총판</h2>
                         {adminCheck(false) && <button className='delButton' onClick={boardDel}>삭제</button>}
                     </div>
                     <div className="title">

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import * as Style from "assets/styleComponent/main/main"
 
 import banner from 'assets/images/main/banner.jpg';
+import m_banner from 'assets/images/main/m_banner.jpg';
 import happy01 from 'assets/images/main/m_1.png';
 import happy02 from 'assets/images/main/m_2.png';
 import happy03 from 'assets/images/main/m_3.png';
@@ -13,7 +14,8 @@ const Main = () => {
     return (
         <main>
             <Style.Banner className="banner">
-                <img src={banner} alt="" />
+                <img className='pcimg' src={banner} alt="" />
+                <img className='moimg' src={m_banner} alt="" />
                 <div className="wrap">
                     <div className="content">
                         <h2>혁신적인, 지속가능성, 고효율</h2>

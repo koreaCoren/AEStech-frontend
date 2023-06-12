@@ -30,9 +30,9 @@ const Performance = () => {
             ? <Loading />
             : <Style.Container>
                 <div className="wrap">
-                    <h2>납품실적</h2>
-
                     <div className="flexBox">
+                        <h2>납품실적</h2>
+
                         {adminCheck(false) && <Link className='write' to={"/community/performance/write"}>글쓰기</Link>}
                     </div>
                     <Style.Board>

@@ -64,6 +64,12 @@ a {
     display: none !important;
 }
 
+.pcimg {}
+
+.moimg {
+    display: none;
+}
+
 .flexBox {
     display: flex;
     justify-content: space-between;
@@ -131,7 +137,15 @@ button {
 
 @media only screen and (min-width:100px) and (max-width:800px) {}
 
-@media only screen and (min-width:100px) and (max-width:600px) {}
+@media only screen and (min-width:100px) and (max-width:600px) {
+    .pcimg {
+        display: none;
+    }
+
+    .moimg {
+        display: block;
+    }
+}
 
 html,
 button {

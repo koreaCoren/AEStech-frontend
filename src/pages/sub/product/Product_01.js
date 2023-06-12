@@ -81,7 +81,7 @@ const Product = () => {
                                     <span>자세히보기</span>
                                 </div>
                             </div>
-                            {/* <h5>■ 냉풍건조기 [CWCD-230D]</h5> */}
+                            <h5>■ 냉풍건조기 [CWCD-120D]</h5>
                         </Link>
                     </li>
                 </ul>

@@ -1,47 +1,48 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import styled from "styled-components";
 import 전화 from "assets/images/Intro/전화.png";
 import 팩스 from "assets/images/Intro/팩스.png";
 import 위치 from "assets/images/Intro/위치.png";
-const {kakao} = window;
+const { kakao } = window;
 
 export default function Come() {
-    useEffect(()=>{
+    useEffect(() => {
         const container = document.getElementById('map');
         const location = new kakao.maps.LatLng(35.89144212706748, 128.59610425518105);
         const options = {
             center: location,
-            level: 3};
+            level: 3
+        };
         const kakaoMap = new kakao.maps.Map(container, options);
         const marker = new kakao.maps.Marker({
             position: location
         });
         marker.setMap(kakaoMap);
-        }, [])
-  return (
-    <>
-        <Wrap>
-            <Title>오시는 길</Title>
-            <Map>
-                <div id="map"></div>
-                <InfoBox>
-                    <div>
-                        <h6>ADDRESS</h6>
-                        <p><img src={위치} className="mo"/> 대구광역시 북구 연암로 68-12(2층)</p>
-                    </div>
-                    <div>
-                        <h6>TEL</h6>
-                        <p><img src={전화} className="mo"/>053-951-3376</p>
-                    </div>
-                    <div>
-                        <h6>FAX</h6>
-                        <p><img src={팩스} className="mo"/>053-952-3376</p>
-                    </div>
-                </InfoBox>
-            </Map>
-        </Wrap>
-    </>
-  )
+    }, [])
+    return (
+        <>
+            <Wrap>
+                <Title>오시는 길</Title>
+                <Map>
+                    <div id="map"></div>
+                    <InfoBox>
+                        <div>
+                            <h6>ADDRESS</h6>
+                            <p><img src={위치} className="mo" /> 대구광역시 북구 연암로 68-12(2층)</p>
+                        </div>
+                        <div>
+                            <h6>TEL</h6>
+                            <p><img src={전화} className="mo" />053-951-3376</p>
+                        </div>
+                        <div>
+                            <h6>FAX</h6>
+                            <p><img src={팩스} className="mo" />053-952-3376</p>
+                        </div>
+                    </InfoBox>
+                </Map>
+            </Wrap>
+        </>
+    )
 }
 const Wrap = styled.div`
 width: 1200px;
@@ -51,13 +52,14 @@ margin: 0 auto;
 }
 `
 const Title = styled.h2`
-font-size: 52px;
-font-weight: bold;
-padding: 120px 0 40px 0;
-text-align: center;
-@media screen and (max-width:1200px) {
-    
-}
+    font-size: 52px;
+    font-weight: bold;
+    padding: 120px 0 40px 0;
+    text-align: center;
+    @media screen and (max-width:500px) {
+        font-size: 34px;
+        padding: 120px 0 20px 0;
+    }
 `
 const Map = styled.div`
 #map{
@@ -71,14 +73,9 @@ const Map = styled.div`
 }
 @media screen and (max-width:1200px) {
     #map{
-    width: 90%;
-    height: 580px;
-    transform: translate(-50%,0%);
-    position: relative;
-    left: 50%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
-}
+        width: 90%;
+        height: 380px;
+    }
 }
 `
 

@@ -25,6 +25,12 @@ import Product_03 from "pages/sub/product/Product_03";
 import Product_04 from "pages/sub/product/Product_04";
 import Product_04_1 from "pages/sub/product/Product_04_1";
 import Inquiry from "pages/sub/inquiry/Inquiry";
+import Performance from "pages/sub/performance/Performance";
+import PerformanceDetail from "pages/sub/performance/PerformanceDetail";
+import Agency from "pages/sub/agency/Agency";
+import AgencyDetail from "pages/sub/agency/AgencyDetail";
+import Distributor from "pages/sub/distributor/Distributor";
+import DistributorDetail from "pages/sub/distributor/DistributorDetail";
 
 import Main from "pages/main/Main";
 import Login from "pages/login/Login";
@@ -34,12 +40,6 @@ import Community from "./community/Community";
 
 
 import "assets/css/common/common.css";
-import Performance from "pages/sub/performance/Performance";
-import PerformanceDetail from "pages/sub/performance/PerformanceDetail";
-import Agency from "pages/sub/agency/Agency";
-import AgencyDetail from "pages/sub/agency/AgencyDetail";
-import Distributor from "pages/sub/distributor/Distributor";
-import DistributorDetail from "pages/sub/distributor/DistributorDetail";
 
 function App() {
     const nav = useNavigate();

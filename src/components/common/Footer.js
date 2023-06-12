@@ -33,7 +33,7 @@ const Footer = () => {
                                             <li key={i}>
                                                 {
                                                     a.lowCategory.length <= 0
-                                                        ? <Link to={`/pages/${(a.cate_code)}`}>{a.cate}</Link>
+                                                        ? <Link to={`/pages/${(a.cate_code)}/1`}>{a.cate}</Link>
                                                         : <span>{a.cate}</span>
                                                 }
                                                 <ol>
@@ -109,6 +109,11 @@ const Foot = styled.footer`
         }
         .right{
             display: none;
+        }
+    }
+    @media (max-width:500px) {
+        .left > p{
+            font-size: 12px;
         }
     }
 `

@@ -34,8 +34,8 @@ const PerformanceDetail = () => {
             ? <Loading />
             : <Style.Detail>
                 <div className="wrap">
-                    <h2>납품실적</h2>
                     <div className="flexBox">
+                        <h2>납품실적</h2>
                         {adminCheck(false) && <button className='delButton' onClick={boardDel}>삭제</button>}
                     </div>
                     <div className="title">
