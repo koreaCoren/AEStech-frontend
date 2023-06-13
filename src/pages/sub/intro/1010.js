@@ -87,6 +87,8 @@ const TextBox = styled.div`
     p{
         font-size: 16px;
         line-height: 1.4;
+        
+        letter-spacing: -1px;
     }
     p .strong{
         font-size: 18px;

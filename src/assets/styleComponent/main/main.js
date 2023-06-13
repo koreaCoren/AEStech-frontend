@@ -57,15 +57,17 @@ export const Banner = styled.div`
 
 export const Happy = styled.div`
     text-align: center;
-    padding: 50px 0px;
+    padding: 100px 0px;
     h2{
         font-size: 32px;
         font-family: 'GmarketSansBold';
+        letter-spacing: -1px;
     }
     h3{
         font-size: 16px;
         color: #666;
         margin: 15px 0px 30px;
+        letter-spacing: -1px;
     }
     ul{
         display: grid;
@@ -109,7 +111,7 @@ export const Happy = styled.div`
         font-size: 28px;
     }
     ul li .content span{
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 12px;
         padding: 7px 30px 5px;
         border: 1px solid #fff;
