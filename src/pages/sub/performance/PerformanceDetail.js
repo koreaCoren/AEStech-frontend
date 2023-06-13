@@ -30,7 +30,7 @@ const PerformanceDetail = () => {
     }, [nav])
 
     return (
-        readDetail === null
+        readDetail !== null
             ? <Loading />
             : <Style.Detail>
                 <div className="wrap">

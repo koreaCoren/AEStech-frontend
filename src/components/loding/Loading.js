@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadingImage from "assets/images/loading.gif";
+import LoadingImage from "assets/images/loading.webp";
 import styled from 'styled-components';
 
 const Loading = () => {
