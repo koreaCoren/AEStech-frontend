@@ -100,7 +100,7 @@ const sendInquiry = async (data) => {
         handleConnectionError(res.data);
         // console.log(res);
         alert("문의메일이 전송되었습니다.");
-        window.location.replace(`/pages/60`);
+        window.location.replace(`/pages/60/1`);
     } catch (error) {
         handleApiError(error);
     }
